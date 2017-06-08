@@ -1,0 +1,29 @@
+﻿<Page x:Class="Banking.Main_Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Banking"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="500"
+      Title="Balance_Inquiry" >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition  />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label Grid.ColumnSpan="2" Margin="20" FontSize="20" Background="Gray" Grid.Column="0" Content="Main Menu" HorizontalContentAlignment="Center" />
+        <Button Content="Withdrawal" Margin="20" Grid.Column="0" HorizontalContentAlignment="Center" Grid.Row="1" Click="Withdrawal"/>
+        <Button Content="Deposit" Margin="20" Grid.Column="0" HorizontalContentAlignment="Center" Grid.Row="2" Click="Deposit"/>
+        <Button Content="Balance Inquiry" Margin="20" Grid.Column="1" HorizontalContentAlignment="Center" Grid.Row="1" Click="Balance_Inquiry"/>
+        <Button Content="Exit" Margin="20" Grid.ColumnSpan="2" Grid.Row="3" HorizontalContentAlignment="Center" Click="On_Exit" />
+    </Grid>
+</Page>
